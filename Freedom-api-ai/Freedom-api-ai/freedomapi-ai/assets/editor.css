@@ -1,0 +1,17 @@
+.freedomapi-ai { margin: 1.5rem 0; padding: 1.5rem; border: 1px solid #ccd0d4; border-radius: 8px; background: #fff; color: #17202a; }
+.freedomapi-ai [hidden] { display: none !important; }
+.freedomapi-ai label { display: block; margin: .8rem 0; font-weight: 600; }
+.freedomapi-ai input:not([type=checkbox]), .freedomapi-ai textarea { display: block; width: 100%; max-width: 44rem; padding: .65rem; border: 1px solid #687587; border-radius: 4px; box-sizing: border-box; color: #17202a; background: #fff; }
+.freedomapi-ai button { margin: .5rem .5rem .5rem 0; padding: .6rem 1rem; background: #135e96; border: 1px solid #135e96; border-radius: 4px; color: white; cursor: pointer; }
+.freedomapi-ai button:disabled { opacity: .5; cursor: default; }
+.freedomapi-ai :focus-visible { outline: 3px solid #a04b00; outline-offset: 3px; }
+.freedomapi-ai .fai-check { display: flex; gap: .6rem; align-items: baseline; font-weight: 400; }
+.freedomapi-ai .fai-check input { flex: 0 0 auto; }
+.freedomapi-ai .fai-comparison { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem; }
+.freedomapi-ai pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 28rem; overflow: auto; background: #f3f5f7; padding: 1rem; border-radius: 4px; font: .875rem/1.5 monospace; color: #17202a; }
+.freedomapi-ai details { margin: 1rem 0; }
+.freedomapi-ai summary { cursor: pointer; font-weight: 600; }
+.freedomapi-ai .fai-status { border-left: 4px solid #135e96; padding: .7rem; background: #eef6fc; }
+.freedomapi-ai .fai-error { border-color: #b32d2e; color: #8a2424; background: #fcf0f1; }
+.freedomapi-ai .fai-rollback { border-top: 1px solid #ccd0d4; margin-top: 1rem; padding-top: 1rem; }
+@media (max-width: 720px) { .freedomapi-ai .fai-comparison { grid-template-columns: 1fr; } .freedomapi-ai { padding: 1rem; } }
