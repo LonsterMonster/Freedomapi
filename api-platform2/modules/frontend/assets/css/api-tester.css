@@ -1,0 +1,92 @@
+.apiplatform-api-tester {
+    display: grid;
+    gap: 18px;
+}
+
+.apiplatform-api-tester-meta {
+    display: grid;
+    gap: 12px;
+}
+
+.apiplatform-api-tester-meta code,
+.apiplatform-api-tester-result pre {
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.apiplatform-api-key-control {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.apiplatform-api-tester-list {
+    display: grid;
+    gap: 10px;
+}
+
+.apiplatform-api-tester-list-header,
+.apiplatform-api-tester-actions,
+.apiplatform-api-tester-footer,
+.apiplatform-api-tester-result-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.apiplatform-api-tester-list-header {
+    justify-content: space-between;
+}
+
+.apiplatform-api-tester-list-header h3,
+.apiplatform-api-tester-result h3 {
+    margin: 0;
+}
+
+.apiplatform-api-tester-rows {
+    display: grid;
+    gap: 8px;
+}
+
+.apiplatform-api-tester-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.apiplatform-api-tester-error {
+    display: none;
+    color: #b42318;
+    font-weight: 600;
+}
+
+.apiplatform-api-tester-error.is-visible {
+    display: block;
+}
+
+.apiplatform-api-tester-result {
+    display: grid;
+    gap: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding-top: 16px;
+}
+
+.apiplatform-api-tester-result pre {
+    min-height: 72px;
+    padding: 12px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 720px) {
+    .apiplatform-api-tester-row,
+    .apiplatform-api-key-control {
+        grid-template-columns: 1fr;
+    }
+}

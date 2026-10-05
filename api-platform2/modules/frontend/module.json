@@ -1,0 +1,6 @@
+{
+  "name": "frontend",
+  "label": "Dashboard",
+  "enabled": true,
+  "autoload": true
+}

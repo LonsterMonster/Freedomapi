@@ -1,0 +1,1527 @@
+.apiplatform-dashboard,
+.apiplatform-create-api {
+    max-width: 1180px;
+}
+
+.apiplatform .apiplatform-section {
+    color: #e5e7eb;
+    padding: 32px 0;
+}
+
+.apiplatform-section-inner {
+    width: 100%;
+}
+
+.apiplatform .apiplatform-page-title,
+.apiplatform .apiplatform-section h1 {
+    color: #f8fafc;
+    margin: 0 0 20px;
+}
+
+.apiplatform-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apiplatform-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.apiplatform-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.apiplatform-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.apiplatform-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.apiplatform-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.apiplatform-column {
+    flex: 1;
+    min-width: 0;
+}
+
+.apiplatform-column-1 {
+    flex: 1;
+}
+
+.apiplatform-column-2 {
+    flex: 2;
+}
+
+.apiplatform-column-3 {
+    flex: 3;
+}
+
+.apiplatform-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    color: #1d2327;
+    margin: 0 0 16px;
+    padding: 20px;
+}
+
+.apiplatform-card h3 {
+    color: #1d2327;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 14px;
+}
+
+.apiplatform-card p:last-child,
+.apiplatform-card form:last-child,
+.apiplatform-card table:last-child {
+    margin-bottom: 0;
+}
+
+.apiplatform-metric-value {
+    font-size: 34px;
+    line-height: 1.1;
+    margin: 8px 0 0;
+}
+
+.apiplatform-form-row {
+    margin-bottom: 16px;
+}
+
+.apiplatform-form-row label {
+    color: #1d2327;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.apiplatform .apiplatform-form-row label {
+    color: #f8fafc;
+}
+
+.apiplatform-form-row input,
+.apiplatform-form-row select,
+.apiplatform-form-row textarea,
+.apiplatform-input {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #1d2327;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 760px;
+    min-height: 40px;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.apiplatform-form-row textarea,
+textarea.apiplatform-input {
+    min-height: 120px;
+}
+
+.apiplatform-form-row input:focus,
+.apiplatform-form-row select:focus,
+.apiplatform-form-row textarea:focus,
+.apiplatform-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb;
+    outline: none;
+}
+
+.apiplatform-button {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.2;
+    min-height: 40px;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.apiplatform-button-primary {
+    background: #2563eb;
+    color: #fff;
+}
+
+.apiplatform-button-success {
+    background: #15803d;
+    color: #fff;
+}
+
+.apiplatform-button-warning {
+    background: #ca8a04;
+    color: #fff;
+}
+
+.apiplatform-button-danger {
+    background: #b91c1c;
+    color: #fff;
+}
+
+.apiplatform-button-secondary {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+    color: #1f2937;
+}
+
+.apiplatform-alert {
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    margin: 0 0 16px;
+    padding: 12px 14px;
+}
+
+.apiplatform-alert.success {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.apiplatform-alert.error {
+    background: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+}
+
+.apiplatform-alert.info {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+    color: #1e3a8a;
+}
+
+.apiplatform-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.apiplatform-table {
+    border-collapse: collapse;
+    color: #1d2327;
+    min-width: 640px;
+    width: 100%;
+}
+
+.apiplatform-table th,
+.apiplatform-table td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.apiplatform-table th {
+    background: #f9fafb;
+    color: #374151;
+    font-weight: 700;
+}
+
+.apiplatform-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.apiplatform-code-block,
+#apiResponse {
+    background: #111827;
+    border-radius: 8px;
+    color: #22c55e;
+    min-height: 100px;
+    overflow: auto;
+    padding: 12px;
+}
+
+.apiplatform-keys-card {
+    padding: 16px;
+}
+
+.apiplatform-endpoint-card-list {
+    display: grid;
+    gap: 14px;
+}
+
+.apiplatform-api-endpoint-card {
+    margin-bottom: 0;
+    padding: 16px;
+}
+
+.apiplatform-endpoint-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.apiplatform-endpoint-card-header,
+.apiplatform-endpoint-key-row {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+    min-width: 0;
+}
+
+.apiplatform-endpoint-title,
+.apiplatform-endpoint-key-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.apiplatform-endpoint-label {
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.apiplatform-endpoint-url,
+.apiplatform-endpoint-key {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    color: #111827;
+    display: block;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-x: auto;
+    padding: 9px 10px;
+    user-select: text;
+    white-space: nowrap;
+}
+
+.apiplatform-endpoint-url {
+    color: #075985;
+    font-weight: 700;
+}
+
+.apiplatform-endpoint-actions,
+.apiplatform-endpoint-key-actions {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.apiplatform-regenerate-key-form {
+    margin: 0;
+}
+
+.apiplatform-edit-api-card {
+    margin-bottom: 16px;
+}
+
+.apiplatform-edit-api-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-edit-api-key-input {
+    font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+.apiplatform-portal-publishing-card {
+    background: #0f172a;
+    border-color: #243247;
+    color: #f8fafc;
+}
+
+.apiplatform-portal-publishing-card h3,
+.apiplatform-portal-publishing-card label,
+.apiplatform-portal-publishing-card strong {
+    color: #ffffff;
+}
+
+.apiplatform-portal-publishing-card .apiplatform-helper-text,
+.apiplatform-portal-field-note,
+.apiplatform-portal-visibility-help,
+.apiplatform-portal-readiness p {
+    color: #cbd5e1;
+}
+
+.apiplatform-portal-publishing-intro {
+    margin-top: 0;
+}
+
+.apiplatform-portal-publishing-card .apiplatform-form-row input,
+.apiplatform-portal-publishing-card .apiplatform-form-row select,
+.apiplatform-portal-publishing-card .apiplatform-form-row textarea,
+.apiplatform-portal-publishing-card .apiplatform-input {
+    background: #111827;
+    border-color: #334155;
+    color: #ffffff;
+}
+
+.apiplatform-portal-publishing-card .apiplatform-form-row input:focus,
+.apiplatform-portal-publishing-card .apiplatform-form-row select:focus,
+.apiplatform-portal-publishing-card .apiplatform-form-row textarea:focus,
+.apiplatform-portal-publishing-card .apiplatform-input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 1px #60a5fa;
+}
+
+.apiplatform-portal-publishing-card .apiplatform-form-row input::placeholder,
+.apiplatform-portal-publishing-card .apiplatform-form-row textarea::placeholder {
+    color: #94a3b8;
+}
+
+.apiplatform-portal-visibility-help {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    display: grid;
+    gap: 8px;
+    margin: -4px 0 16px;
+    padding: 12px;
+}
+
+.apiplatform-portal-visibility-help p,
+.apiplatform-portal-readiness p,
+.apiplatform-portal-field-note {
+    margin: 0;
+}
+
+.apiplatform-portal-field-note {
+    font-size: 13px;
+    margin: -8px 0 16px;
+    overflow-wrap: anywhere;
+}
+
+.apiplatform-portal-readiness {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin: 16px 0;
+    padding: 12px;
+}
+
+.apiplatform-portal-readiness-list {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+}
+
+.apiplatform-portal-readiness-list li {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #cbd5e1;
+    display: grid;
+    gap: 4px;
+    padding: 10px;
+}
+
+.apiplatform-portal-readiness-list strong {
+    color: #ffffff;
+}
+
+.apiplatform-portal-readiness-list span {
+    color: #cbd5e1;
+}
+
+.apiplatform-portal-publishing-card .apiplatform-checkbox-row {
+    align-items: flex-start;
+    color: #f8fafc;
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.apiplatform-portal-publishing-card .apiplatform-form-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-json-editor {
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    min-height: 220px;
+    tab-size: 4;
+    white-space: pre;
+}
+
+.apiplatform-json-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    color: #991b1b;
+    font-weight: 700;
+    margin: 0 0 8px;
+    padding: 8px 10px;
+}
+
+.apiplatform-confirm-delete {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin: 0 0 14px;
+}
+
+.apiplatform-danger-zone {
+    border-color: #fecaca;
+}
+
+.apiplatform-roadmap {
+    display: grid;
+    gap: 18px;
+}
+
+.apiplatform-roadmap-section h4,
+.apiplatform-feature-card h4 {
+    margin: 0 0 8px;
+}
+
+.apiplatform-roadmap-list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.apiplatform-feature-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.apiplatform-feature-card-head {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.apiplatform-feature-icon {
+    color: #075985;
+    font-weight: 700;
+}
+
+.apiplatform-feature-status {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    color: #374151;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+}
+
+.apiplatform-feature-card p,
+.apiplatform-roadmap-empty {
+    color: #6b7280;
+    margin: 0;
+}
+
+.apiplatform-endpoint-key-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.apiplatform-endpoint-key-row {
+    background: #fff;
+    border: 1px solid #eef2f7;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+
+.apiplatform-api-endpoint-card:hover .apiplatform-endpoint-key-row,
+.apiplatform-endpoint-key-row:focus-within {
+    background: #f8fafc;
+    border-color: #dbeafe;
+    box-shadow: inset 3px 0 0 #2563eb;
+}
+
+.apiplatform-endpoint-meta {
+    color: #6b7280;
+    font-size: 12px;
+    margin: 0;
+}
+
+.apiplatform-key-list {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.apiplatform-key-row {
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+    min-width: 0;
+    padding: 10px 12px;
+    transition: background-color .16s ease, box-shadow .16s ease;
+}
+
+.apiplatform-key-row:last-child {
+    border-bottom: 0;
+}
+
+.apiplatform-key-row:hover,
+.apiplatform-key-row:focus-within {
+    background: #f8fafc;
+    box-shadow: inset 3px 0 0 #2563eb;
+}
+
+.apiplatform-key-line {
+    color: #111827;
+    display: block;
+    flex: 1;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    min-width: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.apiplatform-key-value {
+    user-select: text;
+}
+
+.apiplatform-key-separator {
+    color: #9ca3af;
+    padding: 0 8px;
+    user-select: none;
+}
+
+.apiplatform-key-secret {
+    color: #075985;
+}
+
+.apiplatform-key-missing {
+    color: #b91c1c;
+    font-weight: 700;
+}
+
+.apiplatform-key-actions {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+}
+
+.apiplatform-copy-key,
+.apiplatform-copy-value {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: #1f2937;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    min-height: 30px;
+    padding: 7px 10px;
+}
+
+.apiplatform-copy-key:hover,
+.apiplatform-copy-key:focus,
+.apiplatform-copy-value:hover,
+.apiplatform-copy-value:focus {
+    background: #e5e7eb;
+    border-color: #9ca3af;
+    outline: none;
+}
+
+.apiplatform-copy-key:focus,
+.apiplatform-copy-value:focus {
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, .24);
+}
+
+.apiplatform-copy-key.is-copied,
+.apiplatform-copy-value.is-copied {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.apiplatform-copy-key.has-copy-error,
+.apiplatform-copy-value.has-copy-error {
+    background: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+}
+
+.apiplatform-copy-buffer {
+    left: -9999px;
+    position: fixed;
+    top: 0;
+}
+
+.status-ok {
+    color: #15803d;
+    font-weight: 700;
+}
+
+.status-fail {
+    color: #b91c1c;
+    font-weight: 700;
+}
+
+.status-warning {
+    color: #ca8a04;
+    font-weight: 700;
+}
+
+.apiplatform-notice-success {
+    color: #15803d;
+}
+
+.apiplatform-notice-error {
+    color: #b91c1c;
+}
+
+.apiplatform-documentation-section .apiplatform-section-inner {
+    max-width: 1180px;
+}
+
+.apiplatform-docs {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    color: #e5e7eb;
+    padding: 24px;
+}
+
+.apiplatform-docs-header {
+    margin-bottom: 22px;
+}
+
+.apiplatform-docs-kicker {
+    color: #3b82f6;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.apiplatform-docs-header h1 {
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+}
+
+.apiplatform-docs-header p {
+    color: #94a3b8;
+    max-width: 720px;
+}
+
+.apiplatform-docs-layout {
+    align-items: start;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 240px minmax(0, 1fr);
+}
+
+.apiplatform-docs-nav {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    max-height: calc(100vh - 120px);
+    overflow: auto;
+    padding: 14px;
+    position: sticky;
+    top: 24px;
+}
+
+.apiplatform-docs-nav-title {
+    color: #f8fafc;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.apiplatform-docs-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apiplatform-docs-nav ul ul {
+    border-left: 1px solid #334155;
+    margin: 6px 0 8px 8px;
+    padding-left: 10px;
+}
+
+.apiplatform-docs-nav a {
+    border-radius: 6px;
+    color: #e5e7eb;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 8px;
+    text-decoration: none;
+}
+
+.apiplatform-docs-nav a:hover,
+.apiplatform-docs-nav a:focus,
+.apiplatform-docs-nav a.is-active {
+    background: #172554;
+    color: #3b82f6;
+}
+
+.apiplatform-docs-content {
+    display: grid;
+    gap: 48px;
+    min-width: 0;
+}
+
+.apiplatform-docs-breadcrumbs {
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: -24px;
+}
+
+.apiplatform-docs-card {
+    background: #0f172a;
+    border-color: #1e293b;
+    color: #e5e7eb;
+    padding: 0;
+}
+
+.apiplatform-docs-endpoint-list {
+    display: grid;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.apiplatform-docs-post-list {
+    display: grid;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.apiplatform-docs-endpoint-card {
+    scroll-margin-top: 24px;
+}
+
+.apiplatform-docs-post-card {
+    scroll-margin-top: 24px;
+}
+
+.apiplatform-docs-block {
+    padding: 32px;
+    scroll-margin-top: 24px;
+}
+
+.apiplatform-docs-post {
+    padding: 32px;
+}
+
+.apiplatform-docs-article-header {
+    border-bottom: 1px solid #1e293b;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+}
+
+.apiplatform-docs-article-kicker {
+    color: #3b82f6;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.apiplatform-docs-article-header h1 {
+    color: #f8fafc;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+.apiplatform-docs-article-description {
+    color: #94a3b8;
+    margin: 0;
+    max-width: 760px;
+}
+
+.apiplatform-docs-post-body {
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+.apiplatform-docs-post-body p,
+.apiplatform-docs-post-body ul,
+.apiplatform-docs-post-body ol,
+.apiplatform-docs-post-body pre,
+.apiplatform-docs-post-body table {
+    margin-bottom: 24px;
+}
+
+.apiplatform-docs-post-body ul,
+.apiplatform-docs-post-body ol {
+    padding-left: 24px;
+}
+
+.apiplatform-docs-post-body li {
+    margin: 8px 0;
+}
+
+.apiplatform-docs-post-body li > ul,
+.apiplatform-docs-post-body li > ol {
+    margin: 8px 0 0;
+}
+
+.apiplatform-docs-post-body h2,
+.apiplatform-docs-post-body h1,
+.apiplatform-docs-post-body h3,
+.apiplatform-docs-post-body h4,
+.apiplatform-docs-post-body h5,
+.apiplatform-docs-post-body h6 {
+    color: #ffffff;
+    margin: 32px 0 16px;
+}
+
+.apiplatform-docs-post-body h1 { font-size: 30px; }
+.apiplatform-docs-post-body h2 { font-size: 24px; }
+.apiplatform-docs-post-body h5 { font-size: 16px; }
+.apiplatform-docs-post-body h6 { font-size: 14px; }
+
+.apiplatform-docs-post-body code {
+    background: #111827;
+    border-radius: 4px;
+    color: #f8fafc;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: .92em;
+    padding: 2px 5px;
+}
+
+.apiplatform-docs-post-body pre {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    overflow-x: auto;
+    padding: 14px;
+}
+
+.apiplatform-docs-post-body pre[data-language]::before {
+    color: #94a3b8;
+    content: attr(data-language);
+    display: block;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.apiplatform-docs-post-body pre code {
+    background: transparent;
+    padding: 0;
+}
+
+.apiplatform-docs-post-body blockquote {
+    border-left: 3px solid #3b82f6;
+    color: #cbd5e1;
+    margin: 24px 0;
+    padding: 4px 18px;
+}
+
+.apiplatform-docs-post-body hr {
+    border: 0;
+    border-top: 1px solid #334155;
+    margin: 32px 0;
+}
+
+.apiplatform-docs-markdown-table-wrap {
+    margin-bottom: 24px;
+    overflow-x: auto;
+}
+
+.apiplatform-docs-markdown-table-wrap table {
+    border-collapse: collapse;
+    min-width: 100%;
+}
+
+.apiplatform-docs-markdown-table-wrap th,
+.apiplatform-docs-markdown-table-wrap td {
+    border: 1px solid #334155;
+    padding: 9px 11px;
+    text-align: left;
+}
+
+.apiplatform-docs-markdown-table-wrap th {
+    background: #111827;
+    color: #f8fafc;
+}
+
+.apiplatform-docs-toc {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 14px 16px;
+}
+
+.apiplatform-docs-toc strong {
+    color: #f8fafc;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.apiplatform-docs-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apiplatform-docs-toc li { margin: 4px 0; }
+.apiplatform-docs-toc li[class*="level-2"] { margin-left: 12px; }
+.apiplatform-docs-toc li[class*="level-3"] { margin-left: 24px; }
+.apiplatform-docs-toc li[class*="level-4"],
+.apiplatform-docs-toc li[class*="level-5"],
+.apiplatform-docs-toc li[class*="level-6"] { margin-left: 36px; }
+
+.apiplatform-docs-landing-lead {
+    color: #cbd5e1;
+    font-size: 17px;
+    margin: 0 0 28px;
+}
+
+.apiplatform-docs-landing-grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.apiplatform-docs-landing-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    display: grid;
+    gap: 6px;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.apiplatform-docs-landing-card strong {
+    color: #f8fafc;
+}
+
+.apiplatform-docs-landing-card span {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.apiplatform-docs-landing-card:hover,
+.apiplatform-docs-landing-card:focus {
+    border-color: #3b82f6;
+}
+
+.apiplatform-docs-post-body img {
+    display: block;
+    height: auto;
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+.apiplatform-docs-prev-next {
+    border-top: 1px solid #1e293b;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 34px;
+    padding-top: 20px;
+}
+
+.apiplatform-docs-prev-next-link {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    display: grid;
+    gap: 5px;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.apiplatform-docs-prev-next-link.is-next {
+    text-align: right;
+}
+
+.apiplatform-docs-prev-next-link span {
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.apiplatform-docs-prev-next-link strong {
+    color: #f8fafc;
+}
+
+.apiplatform-docs-prev-next-link:hover,
+.apiplatform-docs-prev-next-link:focus {
+    border-color: #3b82f6;
+}
+
+.apiplatform-docs-post-body a {
+    color: #3b82f6;
+}
+
+.apiplatform-docs-block-heading {
+    margin-bottom: 24px;
+}
+
+.apiplatform-docs-block-heading h2 {
+    color: #f8fafc;
+    font-size: 22px;
+    margin: 0 0 24px;
+}
+
+.apiplatform-docs-block-heading p,
+.apiplatform-docs-endpoint-description,
+.apiplatform-docs-param p {
+    color: #94a3b8;
+}
+
+.apiplatform-docs-section-post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apiplatform-docs-section-post-item {
+    border-bottom: 1px solid #1e293b;
+    padding: 20px 0;
+}
+
+.apiplatform-docs-section-post-item:first-child {
+    padding-top: 0;
+}
+
+.apiplatform-docs-section-post-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.apiplatform-docs-section-post-link {
+    color: #f8fafc;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.apiplatform-docs-section-post-link:hover {
+    color: #3b82f6;
+}
+
+.apiplatform-docs-section-post-desc {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 6px 0 0;
+}
+
+.apiplatform-docs-list {
+    color: #e5e7eb;
+    margin: 24px 0;
+    padding-left: 20px;
+}
+
+.apiplatform-docs-list li {
+    margin: 16px 0;
+}
+
+.apiplatform-docs-example {
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    margin: 16px 0;
+    overflow: hidden;
+}
+
+.apiplatform-docs-example-header {
+    align-items: center;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+    color: #f8fafc;
+    display: flex;
+    font-size: 13px;
+    font-weight: 800;
+    justify-content: space-between;
+    padding: 10px 12px;
+}
+
+.apiplatform-docs-copy {
+    min-height: 28px;
+    padding: 6px 10px;
+}
+
+.apiplatform-docs-code {
+    background: #111827;
+    color: #e5e7eb;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 0;
+    overflow-x: auto;
+    padding: 14px;
+    white-space: pre;
+}
+
+.apiplatform-docs-code code {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+}
+
+.apiplatform-docs-endpoint {
+    padding: 32px;
+}
+
+.apiplatform-docs-endpoint-heading {
+    align-items: flex-start;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.apiplatform-docs-endpoint-heading h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.apiplatform-docs-endpoint-heading code {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #e5e7eb;
+    display: inline-block;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    padding: 4px 7px;
+    word-break: break-word;
+}
+
+.apiplatform-docs-method {
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1;
+    margin-right: 8px;
+    min-width: 0;
+    padding: 5px 7px;
+    text-align: center;
+    vertical-align: 2px;
+}
+
+.apiplatform-docs-method-get {
+    background: #16a34a;
+}
+
+.apiplatform-docs-method-post {
+    background: #2563eb;
+}
+
+.apiplatform-docs-method-put,
+.apiplatform-docs-method-patch {
+    background: #d97706;
+}
+
+.apiplatform-docs-method-delete {
+    background: #dc2626;
+}
+
+.apiplatform-docs-params {
+    margin-top: 32px;
+}
+
+.apiplatform-docs-params h4 {
+    color: #f8fafc;
+    font-size: 14px;
+    margin: 0 0 16px;
+}
+
+.apiplatform-docs-param-table-wrap {
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.apiplatform-docs-param-table {
+    border-collapse: collapse;
+    color: #e5e7eb;
+    margin: 0;
+    min-width: 680px;
+    width: 100%;
+}
+
+.apiplatform-docs-param-table th,
+.apiplatform-docs-param-table td {
+    border-bottom: 1px solid #1e293b;
+    padding: 14px 16px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.apiplatform-docs-param-table th {
+    background: #020617;
+    color: #f8fafc;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.apiplatform-docs-param-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.apiplatform-docs-param-table td {
+    color: #e5e7eb;
+}
+
+.apiplatform-docs-param-table code {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    color: #e5e7eb;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    padding: 3px 6px;
+}
+
+.apiplatform-docs-param-type,
+.apiplatform-docs-param-required,
+.apiplatform-docs-param-optional {
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 7px;
+    text-transform: uppercase;
+}
+
+.apiplatform-docs-param-type {
+    background: #172554;
+    color: #93c5fd;
+}
+
+.apiplatform-docs-param-required {
+    background: #7f1d1d;
+    color: #fecaca;
+}
+
+.apiplatform-docs-param-optional {
+    background: #1e293b;
+    color: #cbd5e1;
+}
+
+.apiplatform-docs a {
+    color: #3b82f6;
+}
+
+.apiplatform-setting-row {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.apiplatform .apiplatform-setting-row strong {
+    color: #f8fafc;
+}
+
+.apiplatform-switch {
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    width: 52px;
+}
+
+.apiplatform-switch input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.apiplatform-slider {
+    background: #6b7280;
+    border-radius: 999px;
+    cursor: pointer;
+    inset: 0;
+    position: absolute;
+    transition: .3s;
+}
+
+.apiplatform-slider:before {
+    background: #fff;
+    border-radius: 50%;
+    content: '';
+    height: 22px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    transition: .3s;
+    width: 22px;
+}
+
+.apiplatform-switch input:checked + .apiplatform-slider {
+    background: #15803d;
+}
+
+.apiplatform-switch input:checked + .apiplatform-slider:before {
+    transform: translateX(24px);
+}
+
+/* =========================
+   Layout size modes
+   ========================= */
+.apiplatform-size-wide .apiplatform-dashboard,
+.apiplatform-size-wide .apiplatform-create-api,
+.apiplatform-size-wide .apiplatform-documentation-section .apiplatform-section-inner {
+    max-width: 1400px;
+}
+
+.apiplatform.apiplatform-size-full {
+    width: calc(100vw - 32px);
+    max-width: calc(100vw - 32px);
+    margin-left: calc(50% - 50vw + 16px);
+    box-sizing: border-box;
+}
+
+.et_pb_column_0:has(.apiplatform.apiplatform-size-full) {
+    padding-top: 0;
+}
+
+.apiplatform.apiplatform-size-full .apiplatform-main {
+    box-sizing: border-box;
+    padding-left: 28px;
+    padding-right: 28px;
+    width: 100%;
+}
+
+.apiplatform.apiplatform-size-full .apiplatform-publisher-dashboard,
+.apiplatform.apiplatform-size-full .apiplatform-publisher-page {
+    max-width: none;
+    width: 100%;
+}
+
+.apiplatform.apiplatform-size-full .apiplatform-dashboard,
+.apiplatform.apiplatform-size-full .apiplatform-create-api,
+.apiplatform.apiplatform-size-full .apiplatform-usage,
+.apiplatform.apiplatform-size-full .apiplatform-billing,
+.apiplatform.apiplatform-size-full .apiplatform-profile,
+.apiplatform.apiplatform-size-full .apiplatform-documentation-section .apiplatform-section-inner {
+    max-width: none;
+}
+
+@media (max-width: 768px) {
+    .apiplatform.apiplatform-size-full {
+        width: calc(100vw - 16px);
+        max-width: calc(100vw - 16px);
+        margin-left: calc(50% - 50vw + 8px);
+    }
+
+    .apiplatform-row {
+        flex-direction: column;
+    }
+
+    .apiplatform-grid-2,
+    .apiplatform-grid-3,
+    .apiplatform-grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-card {
+        padding: 16px;
+    }
+
+    .apiplatform-key-row {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .apiplatform-key-actions {
+        justify-content: space-between;
+    }
+
+    .apiplatform-endpoint-card-header,
+    .apiplatform-endpoint-key-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .apiplatform-endpoint-actions,
+    .apiplatform-endpoint-key-actions,
+    .apiplatform-edit-api-actions {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .apiplatform-roadmap-list {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-docs-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-docs-landing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-docs-prev-next {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-docs-prev-next-link.is-next {
+        text-align: left;
+    }
+
+    .apiplatform-docs-nav {
+        max-height: none;
+        position: static;
+    }
+
+    .apiplatform-docs-block {
+        padding: 32px;
+    }
+
+    .apiplatform-docs-endpoint-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .apiplatform-docs-method {
+        width: max-content;
+    }
+}

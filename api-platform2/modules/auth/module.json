@@ -1,0 +1,7 @@
+{
+  "name": "auth",
+  "label": "Authentication Providers",
+  "enabled": 1,
+  "autoload": 1,
+  "bootstrap": "auth.php"
+}

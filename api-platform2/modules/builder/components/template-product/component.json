@@ -1,0 +1,26 @@
+{
+  "name": "template-product",
+  "class": "APIPlatform_Builder_Component_Template_Product",
+  "label": "Template: Product API",
+  "description": "Builder component converted from the legacy Store product template.",
+  "fields": [
+    {
+      "name": "product",
+      "label": "Product",
+      "type": "text",
+      "placeholder": "Example Product",
+      "default": "Example Product"
+    },
+    {
+      "name": "price",
+      "label": "Price",
+      "type": "text",
+      "placeholder": "19.99",
+      "default": "19.99"
+    }
+  ],
+  "output": {
+    "product": "{{product}}",
+    "price": "{{price}}"
+  }
+}

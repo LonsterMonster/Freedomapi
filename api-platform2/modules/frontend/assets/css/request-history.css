@@ -1,0 +1,692 @@
+.apiplatform-request-history-card {
+    background: #0f172a;
+    border-color: #1e293b;
+    color: #f1f5f9;
+}
+
+.apiplatform-request-history-card,
+.apiplatform-request-history-card label,
+.apiplatform-request-history-stats,
+.apiplatform-request-history-stat,
+.apiplatform-request-history-chart,
+.apiplatform-request-history-table-wrap,
+.apiplatform-request-history-table,
+.apiplatform-request-history-table th,
+.apiplatform-request-history-table td,
+.apiplatform-request-history-inspector,
+.apiplatform-request-history-inspector summary,
+.apiplatform-request-history-inspector pre,
+.apiplatform-request-history-inspector code {
+    color: #ffffff !important;
+}
+
+.apiplatform-request-history-card > h3,
+.apiplatform-request-history-section h1 {
+    color: #f8fafc;
+}
+
+.apiplatform-request-history {
+    color: #f1f5f9;
+    display: grid;
+    gap: 24px;
+}
+
+.apiplatform-request-history-filters {
+    background: #111827;
+    border: 1px solid #263449;
+    border-radius: 8px;
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+}
+
+.apiplatform-filter-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.apiplatform-filter-grid label {
+    color: #f8fafc;
+    display: grid;
+    font-size: 13px;
+    font-weight: 800;
+    gap: 6px;
+}
+
+.apiplatform-filter-grid small {
+    color: #f1f5f9 !important;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.apiplatform-filter-grid input,
+.apiplatform-filter-grid select {
+    background-color: #151515;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #ffffff !important;
+    min-height: 38px;
+    padding: 8px 10px;
+}
+
+.apiplatform-filter-grid input::placeholder {
+    color: #e2e8f0 !important;
+    opacity: 1;
+}
+
+.apiplatform-filter-grid input:focus,
+.apiplatform-filter-grid select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, .24);
+    outline: none;
+}
+
+.apiplatform-filter-grid select option {
+    background: #151515;
+    color: #ffffff;
+}
+
+.apiplatform-filter-grid select:disabled {
+    background: #111827;
+    border-color: #263449;
+    color: #f1f5f9 !important;
+    cursor: not-allowed;
+}
+
+.apiplatform-request-history .apiplatform-grid {
+    gap: 14px;
+}
+
+.apiplatform-request-history .apiplatform-stat,
+.apiplatform-request-history-stat {
+    background: #111827;
+    border: 1px solid #263449;
+    border-radius: 8px;
+    color: #ffffff !important;
+    display: block;
+    padding: 14px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
+}
+
+.apiplatform-request-history-stat.is-clickable {
+    cursor: pointer;
+}
+
+.apiplatform-request-history-stat.is-clickable:hover,
+.apiplatform-request-history-stat.is-clickable:focus-visible {
+    background: #172033;
+    border-color: #60a5fa;
+    color: #ffffff !important;
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.apiplatform-request-history-stat.is-clickable:focus-visible {
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, .3);
+}
+
+.apiplatform-request-history .apiplatform-stat small,
+.apiplatform-request-history-stat-label {
+    color: #f1f5f9 !important;
+    display: block;
+    font-weight: 800;
+}
+
+.apiplatform-request-history .apiplatform-stat h2,
+.apiplatform-request-history-stat-value {
+    color: #ffffff !important;
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 8px 0 0;
+}
+
+.apiplatform-request-history-trend {
+    color: #f1f5f9 !important;
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin-top: 8px;
+}
+
+.apiplatform-request-history-trend--positive {
+    color: #86efac !important;
+}
+
+.apiplatform-request-history-trend--negative {
+    color: #fecaca !important;
+}
+
+.apiplatform-request-history-trend--neutral {
+    color: #e2e8f0 !important;
+}
+
+.apiplatform-request-history-actions,
+.apiplatform-request-history-pagination {
+    align-items: center;
+    color: #f1f5f9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-request-history-charts {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.apiplatform-request-history-chart {
+    background: #111827;
+    border: 1px solid #263449;
+    border-radius: 8px;
+    color: #f1f5f9;
+    padding: 14px;
+}
+
+.apiplatform-request-history-chart h3 {
+    color: #ffffff !important;
+    margin: 0 0 12px;
+}
+
+.apiplatform-request-history-chart-title {
+    color: #ffffff !important;
+}
+
+.apiplatform-request-history-chart-label,
+.apiplatform-request-history-chart-meta {
+    color: #f1f5f9 !important;
+}
+
+.apiplatform-request-history-chart p {
+    color: #f1f5f9 !important;
+}
+
+.apiplatform-request-history-bar {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    color: #ffffff !important;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: minmax(74px, 1fr) 2fr auto;
+    margin-top: 10px;
+    padding: 7px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color .15s ease, border-color .15s ease;
+}
+
+.apiplatform-request-history-bar.is-clickable {
+    cursor: pointer;
+}
+
+.apiplatform-request-history-bar.is-clickable:hover,
+.apiplatform-request-history-bar.is-clickable:focus-visible {
+    background: #172033;
+    border-color: #3b82f6;
+    color: #ffffff !important;
+    outline: none;
+}
+
+.apiplatform-request-history-bar.is-clickable:focus-visible {
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, .28);
+}
+
+.apiplatform-request-history-bar span {
+    color: #f1f5f9 !important;
+}
+
+.apiplatform-request-history-bar strong {
+    color: #ffffff !important;
+}
+
+.apiplatform-request-history-bar progress {
+    accent-color: #3b82f6;
+    height: 12px;
+    width: 100%;
+}
+
+.apiplatform-request-history-chart .apiplatform-request-history-bar {
+    position: relative;
+}
+
+.apiplatform-request-history-chart .apiplatform-request-history-chart-tooltip {
+    background: #020617;
+    border: 1px solid #475569;
+    border-radius: 7px;
+    bottom: calc(100% + 8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .32);
+    color: #ffffff !important;
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    left: 50%;
+    line-height: 1.45;
+    max-width: min(260px, calc(100vw - 48px));
+    opacity: 0;
+    padding: 8px 10px;
+    pointer-events: none;
+    position: absolute;
+    text-align: left;
+    transform: translateX(-50%) translateY(4px);
+    transition: opacity .12s ease, transform .12s ease;
+    visibility: hidden;
+    white-space: normal;
+    z-index: 6;
+}
+
+.apiplatform-request-history-chart .apiplatform-request-history-bar:hover .apiplatform-request-history-chart-tooltip,
+.apiplatform-request-history-chart .apiplatform-request-history-bar:focus-visible .apiplatform-request-history-chart-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    visibility: visible;
+}
+
+.apiplatform-request-history-table-wrap {
+    border: 1px solid #263449;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.apiplatform-request-history-table {
+    background: #0f172a;
+    border-collapse: collapse;
+    color: #ffffff !important;
+    min-width: 1120px;
+    width: 100%;
+}
+
+.apiplatform-request-history-table th,
+.apiplatform-request-history-table td {
+    border-bottom: 1px solid #263449;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.apiplatform-request-history-table thead {
+    display: table-header-group;
+}
+
+.apiplatform-request-history-table tbody {
+    display: table-row-group;
+}
+
+.apiplatform-request-history-table tr {
+    display: table-row;
+}
+
+.apiplatform-request-history-table th,
+.apiplatform-request-history-table td {
+    display: table-cell;
+}
+
+.apiplatform-request-history-table tbody tr {
+    height: auto;
+    min-height: 0;
+}
+
+.apiplatform-request-history-table tbody td {
+    height: auto;
+    line-height: 1.35;
+    min-height: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.apiplatform-request-history-table tbody tr::before,
+.apiplatform-request-history-table tbody tr::after,
+.apiplatform-request-history-table tbody td::before,
+.apiplatform-request-history-table tbody td::after {
+    content: none;
+    display: none;
+}
+
+.apiplatform-request-history-table th {
+    background: #020617;
+    border-bottom: 1px solid #475569;
+    box-shadow: 0 1px 0 rgba(148, 163, 184, .2);
+    color: #ffffff !important;
+    font-size: 12px;
+    font-weight: 900;
+    position: sticky;
+    top: 0;
+    text-transform: uppercase;
+    z-index: 4;
+}
+
+.apiplatform-request-history-table td {
+    color: #ffffff !important;
+}
+
+.apiplatform-request-history-api-cell {
+    min-width: 140px;
+}
+
+.apiplatform-request-history-table .apiplatform-api-identity {
+    align-items: center;
+    display: inline-flex;
+    gap: 6px;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    min-height: 0;
+    padding: 0;
+}
+
+.apiplatform-request-history-table .apiplatform-api-avatar {
+    font-size: 10px;
+    height: 22px;
+    line-height: 1;
+    min-height: 0;
+    min-width: 22px;
+    width: 22px;
+}
+
+.apiplatform-request-history-table .apiplatform-api-name {
+    display: inline-block;
+    line-height: 1.25;
+    max-width: 180px;
+    overflow: hidden;
+    overflow-wrap: normal !important;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    word-break: normal !important;
+}
+
+.apiplatform-request-history-table .apiplatform-http-status,
+.apiplatform-request-history-table .status-ok,
+.apiplatform-request-history-table .status-fail {
+    align-items: center;
+    display: inline-flex;
+    line-height: 1.2;
+    margin: 0;
+    min-height: 20px;
+    padding: 2px 7px;
+}
+
+.apiplatform-request-history-table .apiplatform-http-status {
+    min-width: 40px;
+}
+
+.apiplatform-request-history-table .apiplatform-request-history-toggle {
+    line-height: 1.2;
+    margin: 0;
+    min-height: 0;
+    padding: 6px 10px;
+}
+
+.apiplatform-request-history-table .apiplatform-request-history-chart-tooltip {
+    display: none;
+}
+
+.apiplatform-request-history-table tbody tr:hover {
+    background: #111827;
+}
+
+.apiplatform-request-history-table code,
+.apiplatform-request-history-details code {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    color: #bfdbfe !important;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    padding: 3px 6px;
+}
+
+.apiplatform-request-history-toggle {
+    background: #172554;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    color: #dbeafe;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 6px 10px;
+}
+
+.apiplatform-request-history-toggle:hover,
+.apiplatform-request-history-toggle:focus,
+.apiplatform-request-history-toggle:focus-visible {
+    background: #1d4ed8;
+    color: #ffffff;
+    outline: none;
+}
+
+.apiplatform-request-history-toggle:focus-visible {
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, .32);
+}
+
+.apiplatform-request-history-details-row {
+    display: none;
+}
+
+.apiplatform-request-history-details-row.is-open {
+    display: table-row;
+}
+
+.apiplatform-request-history-details {
+    background: #111827;
+    color: #ffffff !important;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 14px;
+}
+
+.apiplatform-request-history-details h3,
+.apiplatform-request-history-details h4 {
+    color: #ffffff !important;
+}
+
+.apiplatform-request-history-details p {
+    color: #f1f5f9 !important;
+}
+
+.apiplatform-request-history-details pre {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #ffffff !important;
+    margin: 8px 0;
+    max-height: 260px;
+    overflow: auto;
+    padding: 12px;
+}
+
+.apiplatform-request-history-details pre code {
+    background: transparent;
+    border: 0;
+    color: #ffffff !important;
+    padding: 0;
+}
+
+.apiplatform-request-history .apiplatform-alert.info {
+    background: #172554;
+    border-color: #2563eb;
+    color: #f1f5f9 !important;
+}
+
+.apiplatform-request-history .apiplatform-button-secondary,
+.apiplatform-request-history .apiplatform-copy-value {
+    background: #1e293b;
+    border-color: #475569;
+    color: #ffffff !important;
+}
+
+.apiplatform-request-history .apiplatform-button-secondary:hover,
+.apiplatform-request-history .apiplatform-button-secondary:focus,
+.apiplatform-request-history .apiplatform-copy-value:hover,
+.apiplatform-request-history .apiplatform-copy-value:focus {
+    background: #334155;
+    border-color: #60a5fa;
+    color: #ffffff;
+}
+
+.apiplatform-request-history .apiplatform-button-primary {
+    background: #2563eb;
+    color: #ffffff !important;
+}
+
+.apiplatform-request-history .apiplatform-copy-value.is-copied {
+    background: #14532d;
+    border-color: #22c55e;
+    color: #dcfce7;
+}
+
+.apiplatform-request-history .apiplatform-copy-value.has-copy-error {
+    background: #7f1d1d;
+    border-color: #ef4444;
+    color: #fee2e2;
+}
+
+.apiplatform-request-history .status-ok {
+    background: #052e16;
+    border: 1px solid #16a34a;
+    border-radius: 999px;
+    color: #86efac !important;
+    display: inline-block;
+    padding: 3px 8px;
+}
+
+.apiplatform-request-history .status-fail {
+    background: #450a0a;
+    border: 1px solid #dc2626;
+    border-radius: 999px;
+    color: #fecaca !important;
+    display: inline-block;
+    padding: 3px 8px;
+}
+
+.apiplatform-http-status {
+    border: 1px solid #64748b;
+    border-radius: 999px;
+    color: #ffffff !important;
+    display: inline-block;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1;
+    min-width: 44px;
+    padding: 5px 8px;
+    text-align: center;
+}
+
+.apiplatform-http-status--2xx {
+    background: #052e16;
+    border-color: #16a34a;
+    color: #86efac !important;
+}
+
+.apiplatform-http-status--3xx {
+    background: #172554;
+    border-color: #3b82f6;
+    color: #bfdbfe !important;
+}
+
+.apiplatform-http-status--400 {
+    background: #451a03;
+    border-color: #f59e0b;
+    color: #fde68a !important;
+}
+
+.apiplatform-http-status--401 {
+    background: #431407;
+    border-color: #f97316;
+    color: #fed7aa !important;
+}
+
+.apiplatform-http-status--403,
+.apiplatform-http-status--404 {
+    background: #450a0a;
+    border-color: #dc2626;
+    color: #fecaca !important;
+}
+
+.apiplatform-http-status--429 {
+    background: #422006;
+    border-color: #eab308;
+    color: #fef08a !important;
+}
+
+.apiplatform-http-status--5xx {
+    background: #2f0505;
+    border-color: #991b1b;
+    color: #fecaca !important;
+}
+
+.apiplatform-http-status--unknown {
+    background: #1e293b;
+    border-color: #64748b;
+    color: #e2e8f0 !important;
+}
+
+.apiplatform-api-identity {
+    align-items: center;
+    color: #ffffff !important;
+    display: inline-flex;
+    gap: 8px;
+    min-width: 0;
+}
+
+.apiplatform-api-avatar {
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 999px;
+    color: #ffffff !important;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-size: 11px;
+    font-weight: 900;
+    height: 28px;
+    justify-content: center;
+    letter-spacing: 0;
+    width: 28px;
+}
+
+.apiplatform-api-avatar--blue {
+    background: #1d4ed8;
+}
+
+.apiplatform-api-avatar--green {
+    background: #15803d;
+}
+
+.apiplatform-api-avatar--amber {
+    background: #92400e;
+}
+
+.apiplatform-api-avatar--rose {
+    background: #be123c;
+}
+
+.apiplatform-api-avatar--violet {
+    background: #6d28d9;
+}
+
+.apiplatform-api-name {
+    color: #ffffff !important;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 720px) {
+    .apiplatform-request-history-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-request-history-chart .apiplatform-request-history-chart-tooltip {
+        left: 0;
+        transform: translateY(4px);
+    }
+
+    .apiplatform-request-history-chart .apiplatform-request-history-bar:hover .apiplatform-request-history-chart-tooltip,
+    .apiplatform-request-history-chart .apiplatform-request-history-bar:focus-visible .apiplatform-request-history-chart-tooltip {
+        transform: translateY(0);
+    }
+}

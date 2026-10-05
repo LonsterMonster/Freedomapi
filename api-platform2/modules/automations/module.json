@@ -1,0 +1,6 @@
+{
+  "name": "automations",
+  "label": "Admin Automations",
+  "enabled": true,
+  "autoload": true
+}

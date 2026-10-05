@@ -1,0 +1,8 @@
+{
+  "name": "builder",
+  "label": "API Builder",
+  "enabled": true,
+  "autoload": true,
+  "addon": false,
+  "price": 0
+}

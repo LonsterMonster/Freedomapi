@@ -1,0 +1,6 @@
+{
+  "name": "armember",
+  "label": "armember Integration",
+  "enabled": true,
+  "autoload": true
+}

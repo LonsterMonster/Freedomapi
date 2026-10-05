@@ -1,0 +1,8 @@
+{
+  "name": "templates",
+  "label": "Templates",
+  "enabled": true,
+  "autoload": true,
+  "addon": false,
+  "price": 0
+}

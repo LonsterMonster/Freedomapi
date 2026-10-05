@@ -1,0 +1,42 @@
+.apiplatform-plans-page {
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.apiplatform-pricing-header {
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.apiplatform-plan-grid {
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(300px,1fr));
+
+    gap:20px;
+}
+
+.apiplatform-plan-card {
+    border:1px solid #333;
+    padding:20px;
+    border-radius:12px;
+}
+
+.apiplatform-plan-card.active {
+    border-color:lime;
+}
+
+.apiplatform-price {
+    font-size:32px;
+    margin:20px 0;
+}
+
+.apiplatform-feature-list {
+    margin:20px 0;
+    padding-left:20px;
+}
+
+.apiplatform-highlight-card {
+    border:2px solid #0073aa;
+}

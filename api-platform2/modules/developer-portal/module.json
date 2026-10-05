@@ -1,0 +1,7 @@
+{
+  "name": "developer-portal",
+  "label": "Developer Portal",
+  "enabled": 1,
+  "autoload": 1,
+  "bootstrap": "developer-portal.php"
+}

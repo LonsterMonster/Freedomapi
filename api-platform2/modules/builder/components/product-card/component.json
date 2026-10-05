@@ -1,0 +1,31 @@
+{
+  "name": "product-card",
+  "class": "APIPlatform_Builder_Component_Product_Card",
+  "label": "Product Card",
+  "description": "A reusable response block for product and price data.",
+  "fields": [
+    {
+      "name": "product",
+      "label": "Product",
+      "type": "text",
+      "placeholder": "Premium Plan"
+    },
+    {
+      "name": "price",
+      "label": "Price",
+      "type": "text",
+      "placeholder": "$19.00"
+    },
+    {
+      "name": "url",
+      "label": "URL",
+      "type": "url",
+      "placeholder": "https://example.com/product"
+    }
+  ],
+  "output": {
+    "product": "{{product}}",
+    "price": "{{price}}",
+    "url": "{{url}}"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "message",
+  "class": "APIPlatform_Builder_Component_Message",
+  "label": "Message",
+  "description": "A simple response block for status, notification, or freeform text responses.",
+  "fields": [
+    {
+      "name": "content",
+      "label": "Content",
+      "type": "textarea",
+      "placeholder": "Request completed successfully."
+    },
+    {
+      "name": "status",
+      "label": "Status",
+      "type": "text",
+      "placeholder": "success"
+    }
+  ],
+  "output": {
+    "status": "{{status}}",
+    "message": "{{content}}"
+  }
+}

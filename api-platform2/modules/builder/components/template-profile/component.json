@@ -1,0 +1,34 @@
+{
+  "name": "template-profile",
+  "class": "APIPlatform_Builder_Component_Template_Profile",
+  "label": "Template: User Profile API",
+  "description": "Builder component converted from the legacy Social Media profile template.",
+  "fields": [
+    {
+      "name": "username",
+      "label": "Username",
+      "type": "text",
+      "placeholder": "demo_user",
+      "default": "demo_user"
+    },
+    {
+      "name": "followers",
+      "label": "Followers",
+      "type": "number",
+      "placeholder": "1000",
+      "default": "1000"
+    },
+    {
+      "name": "bio",
+      "label": "Bio",
+      "type": "textarea",
+      "placeholder": "Demo user",
+      "default": "Demo user"
+    }
+  ],
+  "output": {
+    "username": "{{username}}",
+    "followers": "{{followers}}",
+    "bio": "{{bio}}"
+  }
+}

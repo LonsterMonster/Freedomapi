@@ -1,0 +1,1507 @@
+/*
+Dashboard UI now uses the shared frontend component styles in frontend.css.
+This file is preserved for legacy enqueue compatibility.
+*/
+
+.apiplatform-publisher-dashboard,
+.apiplatform-publisher-page {
+    color: #111827;
+    max-width: 1280px;
+}
+
+.apiplatform-publisher-hero,
+.apiplatform-publisher-page-head,
+.apiplatform-publisher-panel,
+.apiplatform-publisher-card,
+.apiplatform-publisher-metric {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .05);
+}
+
+.apiplatform-publisher-hero,
+.apiplatform-publisher-page-head {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 24px;
+}
+
+.apiplatform-publisher-hero h1,
+.apiplatform-publisher-page-head h1 {
+    color: #0f172a;
+    font-size: 30px;
+    line-height: 1.15;
+    margin: 0 0 8px;
+}
+
+.apiplatform-publisher-hero p,
+.apiplatform-publisher-page-head p {
+    color: #475569;
+    margin: 0;
+}
+
+.apiplatform-publisher-kicker {
+    color: #2563eb !important;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin: 0 0 8px !important;
+    text-transform: uppercase;
+}
+
+.apiplatform-publisher-hero-actions,
+.apiplatform-publisher-actions,
+.apiplatform-publisher-table-actions,
+.apiplatform-publisher-action-list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-publisher-metrics {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 20px;
+}
+
+.apiplatform-publisher-metric {
+    padding: 16px;
+}
+
+.apiplatform-publisher-metric span,
+.apiplatform-publisher-meta dt,
+.apiplatform-publisher-card p,
+.apiplatform-publisher-list span,
+.apiplatform-publisher-empty p,
+.apiplatform-publisher-unavailable p,
+.apiplatform-publisher-table span,
+.apiplatform-publisher-muted {
+    color: #64748b;
+}
+
+.apiplatform-publisher-metric strong {
+    color: #0f172a;
+    display: block;
+    font-size: 28px;
+    line-height: 1.1;
+    margin: 8px 0 6px;
+}
+
+.apiplatform-publisher-metric small {
+    color: #64748b;
+}
+
+.apiplatform-publisher-dashboard-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.apiplatform-publisher-panel {
+    padding: 18px;
+}
+
+.apiplatform-publisher-panel h2 {
+    color: #0f172a;
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+.apiplatform-publisher-list {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apiplatform-publisher-list li {
+    border: 1px solid #eef2f7;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.apiplatform-publisher-list strong,
+.apiplatform-publisher-list span {
+    display: block;
+}
+
+.apiplatform-publisher-list strong {
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.apiplatform-publisher-api-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.apiplatform-publisher-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+    padding: 18px;
+}
+
+.apiplatform-publisher-card-head {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    min-width: 0;
+}
+
+.apiplatform-publisher-card-head h2 {
+    color: #0f172a;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 6px;
+}
+
+.apiplatform-publisher-card-head p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.apiplatform-publisher-avatar {
+    align-items: center;
+    background: #dbeafe;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    color: #1d4ed8;
+    display: inline-flex;
+    flex: 0 0 42px;
+    font-weight: 900;
+    height: 42px;
+    justify-content: center;
+    width: 42px;
+}
+
+.apiplatform-publisher-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.apiplatform-plan-simulation-notice {
+    background: rgba(180, 83, 9, .16);
+    border: 1px solid rgba(251, 191, 36, .72);
+    border-radius: 8px;
+    color: #fef3c7;
+    font-weight: 700;
+    margin: 0 0 18px;
+    padding: 12px 14px;
+}
+
+.apiplatform-publisher-badge,
+.apiplatform-publisher-disabled-action {
+    border-radius: 999px;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    padding: 6px 9px;
+}
+
+.apiplatform-publisher-badge-public,
+.apiplatform-publisher-badge-active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.apiplatform-publisher-badge-unlisted {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.apiplatform-publisher-badge-private,
+.apiplatform-publisher-badge-disabled,
+.apiplatform-publisher-badge-draft {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.apiplatform-publisher-disabled-action {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    color: #64748b;
+}
+
+.apiplatform-publisher-meta {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0;
+}
+
+.apiplatform-publisher-meta div {
+    background: #f8fafc;
+    border: 1px solid #eef2f7;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.apiplatform-publisher-meta dt {
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.apiplatform-publisher-meta dd {
+    color: #0f172a;
+    font-weight: 700;
+    margin: 0;
+}
+
+.apiplatform-publisher-filters {
+    align-items: end;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: minmax(240px, 1.5fr) repeat(3, minmax(150px, 1fr)) auto;
+    margin-bottom: 20px;
+    padding: 16px;
+}
+
+.apiplatform-publisher-filters label {
+    color: #334155;
+    display: grid;
+    font-size: 12px;
+    font-weight: 800;
+    gap: 6px;
+}
+
+.apiplatform-publisher-filters input,
+.apiplatform-publisher-filters select {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    color: #0f172a;
+    min-height: 40px;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.apiplatform-publisher-range {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.apiplatform-publisher-range a,
+.apiplatform-publisher-range span {
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    color: #1e40af;
+    font-weight: 800;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.apiplatform-publisher-range a[aria-current="page"] {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.apiplatform-publisher-range span {
+    color: #64748b;
+}
+
+.apiplatform-publisher-bars {
+    display: grid;
+    gap: 12px;
+}
+
+.apiplatform-publisher-bar div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.apiplatform-publisher-bar span {
+    color: #334155;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.apiplatform-publisher-bar strong {
+    color: #0f172a;
+    flex: 0 0 auto;
+}
+
+.apiplatform-publisher-bar i {
+    background: #2563eb;
+    border-radius: 999px;
+    display: block;
+    height: 8px;
+}
+
+.apiplatform-publisher-empty,
+.apiplatform-publisher-unavailable {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.apiplatform-publisher-empty strong,
+.apiplatform-publisher-unavailable strong {
+    color: #0f172a;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.apiplatform-publisher-empty p,
+.apiplatform-publisher-unavailable p {
+    margin: 0;
+}
+
+.apiplatform-publisher-table-actions {
+    min-width: 260px;
+}
+
+.apiplatform-sidebar-context {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    margin: -10px 0 18px;
+    padding: 10px;
+}
+
+.apiplatform-sidebar-context span,
+.apiplatform-sidebar-context strong {
+    display: block;
+}
+
+.apiplatform-sidebar-context span {
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.apiplatform-sidebar-context strong {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.25;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.apiplatform-publisher-api-nav {
+    align-items: center;
+    background: #0f172a;
+    border: 1px solid #243247;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.apiplatform-publisher-api-nav a,
+.apiplatform-publisher-api-nav span {
+    border-radius: 999px;
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+.apiplatform-publisher-api-nav a:hover,
+.apiplatform-publisher-api-nav a:focus,
+.apiplatform-publisher-api-nav a[aria-current="page"] {
+    background: #2563eb;
+    color: #ffffff;
+    outline: none;
+}
+
+.apiplatform-publisher-api-nav span {
+    background: #111827;
+    border: 1px solid #334155;
+}
+
+.apiplatform-publisher-page,
+.apiplatform-publisher-dashboard {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    color: #e5e7eb;
+    padding: 20px;
+}
+
+.apiplatform-publisher-dashboard .apiplatform-card,
+.apiplatform-publisher-page .apiplatform-card,
+.apiplatform-publisher-hero,
+.apiplatform-publisher-page-head,
+.apiplatform-publisher-panel,
+.apiplatform-publisher-card,
+.apiplatform-publisher-metric,
+.apiplatform-publisher-filters {
+    background: #0f172a;
+    border-color: #243247;
+    color: #e5e7eb;
+}
+
+.apiplatform-publisher-hero h1,
+.apiplatform-publisher-page-head h1,
+.apiplatform-publisher-panel h2,
+.apiplatform-publisher-card-head h2,
+.apiplatform-publisher-metric strong,
+.apiplatform-publisher-list strong,
+.apiplatform-publisher-empty strong,
+.apiplatform-publisher-unavailable strong,
+.apiplatform-publisher-meta dd,
+.apiplatform-publisher-bar strong,
+.apiplatform-publisher-dashboard .apiplatform-card h3,
+.apiplatform-publisher-page .apiplatform-card h3,
+.apiplatform-publisher-page label,
+.apiplatform-publisher-page strong {
+    color: #ffffff;
+}
+
+.apiplatform-publisher-hero p,
+.apiplatform-publisher-page-head p,
+.apiplatform-publisher-metric span,
+.apiplatform-publisher-metric small,
+.apiplatform-publisher-meta dt,
+.apiplatform-publisher-card p,
+.apiplatform-publisher-list span,
+.apiplatform-publisher-empty p,
+.apiplatform-publisher-unavailable p,
+.apiplatform-publisher-table span,
+.apiplatform-publisher-muted,
+.apiplatform-publisher-bar span {
+    color: #cbd5e1;
+}
+
+.apiplatform-publisher-meta div,
+.apiplatform-publisher-list li,
+.apiplatform-publisher-empty,
+.apiplatform-publisher-unavailable,
+.apiplatform-publisher-filters input,
+.apiplatform-publisher-filters select,
+.apiplatform-publisher-page .apiplatform-input,
+.apiplatform-publisher-page textarea,
+.apiplatform-publisher-page select {
+    background: #111827;
+    border-color: #334155;
+    color: #ffffff;
+}
+
+.apiplatform-publisher-page .apiplatform-input::placeholder,
+.apiplatform-publisher-filters input::placeholder {
+    color: #94a3b8;
+}
+
+.apiplatform-publisher-page .apiplatform-input:focus,
+.apiplatform-publisher-filters input:focus,
+.apiplatform-publisher-filters select:focus,
+.apiplatform-publisher-page textarea:focus,
+.apiplatform-publisher-page select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 1px #60a5fa;
+    outline: none;
+}
+
+.apiplatform-publisher-setting-guide {
+    display: grid;
+    gap: 10px;
+}
+
+.apiplatform-publisher-setting-guide p {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin: 0;
+    padding: 12px;
+}
+
+.apiplatform-publisher-setting-guide strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.apiplatform-publisher-setting-guide span,
+.apiplatform-publisher-readiness-action small {
+    color: #cbd5e1;
+}
+
+.apiplatform-publisher-readiness-action {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.apiplatform-publisher-lifecycle-select-form {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+    margin: 14px 0;
+    padding: 12px;
+}
+
+.apiplatform-publisher-lifecycle-select-form label {
+    display: grid;
+    gap: 6px;
+}
+
+.apiplatform-publisher-lifecycle-select-form button {
+    justify-self: start;
+}
+
+.apiplatform-publisher-endpoint,
+.apiplatform-publisher-key-row code {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #93c5fd;
+    display: block;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    margin: 10px 0;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.apiplatform-publisher-editor-form,
+.apiplatform-publisher-key-list {
+    display: grid;
+    gap: 14px;
+}
+
+.apiplatform-publisher-inline-form {
+    margin: 0;
+}
+
+.apiplatform-publisher-unpublish-row {
+    margin-top: 14px;
+}
+
+.apiplatform-publisher-key-row {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    display: grid;
+    gap: 12px;
+    padding: 14px;
+}
+
+.apiplatform-publisher-quick-actions {
+    align-items: center;
+    background: #0f172a;
+    border: 1px solid #243247;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.apiplatform-publisher-workspace-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.apiplatform-publisher-warning-list,
+.apiplatform-publisher-checklist,
+.apiplatform-publisher-timeline {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 0;
+}
+
+.apiplatform-publisher-warning-list li,
+.apiplatform-publisher-checklist li,
+.apiplatform-publisher-timeline li,
+.apiplatform-publisher-request-row {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.apiplatform-publisher-warning-list li {
+    border-color: #92400e;
+    color: #fde68a;
+}
+
+.apiplatform-publisher-readiness-progress {
+    display: grid;
+    gap: 8px;
+}
+
+.apiplatform-publisher-readiness-progress span {
+    background: #111827;
+    border-radius: 999px;
+    display: block;
+    height: 9px;
+    overflow: hidden;
+}
+
+.apiplatform-publisher-readiness-progress i {
+    background: #22c55e;
+    display: block;
+    height: 100%;
+}
+
+.apiplatform-publisher-checklist li {
+    align-items: start;
+    display: grid;
+    gap: 6px;
+    grid-template-columns: auto minmax(0, 1fr);
+}
+
+.apiplatform-publisher-checklist li span {
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 4px 7px;
+}
+
+.apiplatform-publisher-checklist li small {
+    color: #cbd5e1;
+    grid-column: 2;
+}
+
+.apiplatform-publisher-checklist .is-ready span {
+    background: #14532d;
+    color: #bbf7d0;
+}
+
+.apiplatform-publisher-checklist .is-missing span {
+    background: #7f1d1d;
+    color: #fecaca;
+}
+
+.apiplatform-publisher-request-list {
+    display: grid;
+    gap: 8px;
+}
+
+.apiplatform-publisher-request-row {
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 64px 64px 80px minmax(0, 1fr);
+}
+
+.apiplatform-publisher-request-row code {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #93c5fd;
+    padding: 5px 7px;
+}
+
+.apiplatform-publisher-request-row span,
+.apiplatform-publisher-request-row time,
+.apiplatform-publisher-timeline span {
+    color: #cbd5e1;
+}
+
+.apiplatform-publisher-badge-lifecycle-draft {
+    background: #334155;
+    color: #e2e8f0;
+}
+
+.apiplatform-publisher-badge-lifecycle-private {
+    background: #1e3a8a;
+    color: #dbeafe;
+}
+
+.apiplatform-publisher-badge-lifecycle-testing {
+    background: #164e63;
+    color: #cffafe;
+}
+
+.apiplatform-publisher-badge-lifecycle-ready {
+    background: #14532d;
+    color: #bbf7d0;
+}
+
+.apiplatform-publisher-badge-lifecycle-public {
+    background: #166534;
+    color: #dcfce7;
+}
+
+.apiplatform-publisher-badge-lifecycle-deprecated {
+    background: #713f12;
+    color: #fef3c7;
+}
+
+.apiplatform-publisher-badge-lifecycle-archived {
+    background: #7f1d1d;
+    color: #fecaca;
+}
+
+.apiplatform-publisher-lifecycle-form {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+    max-width: 460px;
+    padding: 12px;
+    width: 100%;
+}
+
+.apiplatform-publisher-lifecycle-form label {
+    color: #f8fafc;
+    display: grid;
+    font-size: 13px;
+    font-weight: 800;
+    gap: 6px;
+}
+
+.apiplatform-publisher-lifecycle-form input,
+.apiplatform-publisher-lifecycle-form textarea {
+    background: #020617;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 9px 10px;
+}
+
+.apiplatform-publisher-lifecycle-form input::placeholder,
+.apiplatform-publisher-lifecycle-form textarea::placeholder {
+    color: #94a3b8;
+}
+
+.apiplatform-publisher-timeline li {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.apiplatform-publisher-timeline strong {
+    min-width: 0;
+}
+
+.apiplatform-create-api-wizard {
+    display: grid;
+    gap: 18px;
+}
+
+.apiplatform-create-wizard-steps {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apiplatform-create-wizard-steps li,
+.apiplatform-create-wizard-step {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.apiplatform-create-wizard-steps li {
+    align-items: center;
+    color: #334155;
+    display: flex;
+    font-size: 12px;
+    font-weight: 800;
+    gap: 8px;
+    padding: 10px;
+}
+
+.apiplatform-create-wizard-steps span {
+    align-items: center;
+    background: #2563eb;
+    border-radius: 999px;
+    color: #ffffff;
+    display: inline-flex;
+    flex: 0 0 24px;
+    height: 24px;
+    justify-content: center;
+    width: 24px;
+}
+
+.apiplatform-create-wizard-step {
+    padding: 18px;
+}
+
+.apiplatform-create-wizard-step h3 {
+    color: #0f172a;
+    font-size: 18px;
+    margin: 0 0 6px;
+}
+
+.apiplatform-create-wizard-step p,
+.apiplatform-create-wizard-note {
+    color: #64748b;
+    margin: 0 0 14px;
+}
+
+.apiplatform .apiplatform-create-wizard-step h3,
+.apiplatform .apiplatform-create-wizard-step p {
+    color: #0f172a;
+}
+
+.apiplatform .apiplatform-create-wizard-step h3 {
+    -webkit-text-fill-color: #0f172a;
+}
+
+.apiplatform-create-wizard-note {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    color: #1e40af;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.apiplatform-create-wizard-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-create-wizard-options span {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 8px 10px;
+}
+
+.apiplatform-create-wizard-options .is-selected {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.apiplatform-doc-workspace-stats {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 14px 0;
+}
+
+.apiplatform-doc-workspace-stats div,
+.apiplatform-doc-workspace-section,
+.apiplatform-doc-workspace-preview,
+.apiplatform-doc-release-list article {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.apiplatform-doc-workspace-stats span,
+.apiplatform-doc-workspace-section summary strong,
+.apiplatform-doc-release-list span {
+    color: #cbd5e1;
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.apiplatform-doc-workspace-stats strong,
+.apiplatform-doc-workspace-section summary span,
+.apiplatform-doc-workspace-preview h3,
+.apiplatform-doc-version-history h3,
+.apiplatform-doc-version-history h4,
+.apiplatform-doc-release-form h3,
+.apiplatform-doc-release-list strong {
+    color: #ffffff;
+}
+
+.apiplatform-doc-workspace-search {
+    display: grid;
+    gap: 6px;
+}
+
+.apiplatform-doc-workspace-section {
+    margin: 10px 0;
+}
+
+.apiplatform-doc-workspace-section[hidden] {
+    display: none;
+}
+
+.apiplatform-doc-workspace-section summary {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apiplatform-doc-workspace-section summary strong.is-ready,
+.apiplatform-doc-workspace-checklist .is-ready span {
+    color: #86efac;
+}
+
+.apiplatform-doc-workspace-section summary strong.is-missing,
+.apiplatform-doc-workspace-checklist .is-missing span {
+    color: #fca5a5;
+}
+
+.apiplatform-doc-workspace-section-body {
+    margin-top: 12px;
+}
+
+.apiplatform-doc-workspace-checklist {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    list-style: none;
+    margin: 12px 0;
+    padding: 0;
+}
+
+.apiplatform-doc-workspace-checklist li {
+    background: rgba(15, 23, 42, .8);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 9px 10px;
+}
+
+.apiplatform-doc-workspace-checklist span {
+    margin-right: 8px;
+}
+
+.apiplatform-doc-workspace-preview {
+    color: #e2e8f0;
+    margin-top: 12px;
+}
+
+.apiplatform-doc-workspace-preview pre {
+    overflow-x: auto;
+}
+
+.apiplatform-doc-workspace-publish {
+    margin: 14px 0;
+}
+
+.apiplatform-doc-release-list {
+    display: grid;
+    gap: 10px;
+}
+
+.apiplatform-doc-release-list p {
+    color: #cbd5e1;
+    margin: 6px 0 0;
+}
+
+.apiplatform-publisher-page.apiplatform-org-workspace {
+    display: grid;
+    gap: 20px;
+}
+
+.apiplatform-publisher-page.apiplatform-org-workspace h1,
+.apiplatform-publisher-page.apiplatform-org-workspace h2,
+.apiplatform-publisher-page.apiplatform-org-workspace h3,
+.apiplatform-publisher-page.apiplatform-org-workspace th,
+.apiplatform-publisher-page.apiplatform-org-workspace td,
+.apiplatform-publisher-page.apiplatform-org-workspace label {
+    color: #ffffff;
+}
+
+.apiplatform-org-header {
+    margin-bottom: 0;
+}
+
+.apiplatform-org-title-row,
+.apiplatform-org-member {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    min-width: 0;
+}
+
+.apiplatform-org-title-row h1 {
+    margin-bottom: 6px;
+}
+
+.apiplatform-org-subhead {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-org-subhead code {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #cbd5e1;
+    font-size: 13px;
+    padding: 5px 8px;
+}
+
+.apiplatform-org-website {
+    color: #93c5fd;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.apiplatform-org-website:hover,
+.apiplatform-org-website:focus {
+    color: #bfdbfe;
+    text-decoration: underline;
+}
+
+.apiplatform-org-logo,
+.apiplatform-org-logo-fallback {
+    flex: 0 0 54px;
+    height: 54px;
+    object-fit: cover;
+    width: 54px;
+}
+
+.apiplatform-org-logo {
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+.apiplatform-org-logo-fallback {
+    font-size: 20px;
+}
+
+.apiplatform-org-header-badges,
+.apiplatform-org-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.apiplatform-org-tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 0;
+    overflow-x: auto;
+}
+
+.apiplatform-org-tabs a {
+    white-space: nowrap;
+}
+
+.apiplatform-org-tabs a.is-active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.apiplatform-org-content {
+    display: grid;
+    gap: 20px;
+}
+
+.apiplatform-org-card h2 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+.apiplatform-org-card h3 {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0 0 6px;
+}
+
+.apiplatform-org-grid {
+    gap: 18px;
+}
+
+/* Keep organization listing cards wide enough for their status, plan, and role badges. */
+.apiplatform-organizations-page .apiplatform-publisher-api-grid.apiplatform-org-grid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.apiplatform-org-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 0;
+}
+
+.apiplatform-org-metric {
+    min-height: 126px;
+}
+
+.apiplatform-org-metric span,
+.apiplatform-org-metric small,
+.apiplatform-org-note,
+.apiplatform-org-table time {
+    color: #cbd5e1;
+}
+
+.apiplatform-org-metric strong {
+    color: #ffffff;
+    overflow-wrap: anywhere;
+}
+
+.apiplatform-org-empty {
+    align-items: flex-start;
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 18px;
+}
+
+.apiplatform-org-empty h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.apiplatform-org-table-wrap {
+    background: #0f172a;
+    border: 1px solid #243247;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.apiplatform-org-table {
+    border-collapse: collapse;
+    min-width: 760px;
+    width: 100%;
+}
+
+.apiplatform-org-table th,
+.apiplatform-org-table td {
+    border-bottom: 1px solid #243247;
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.apiplatform-org-table th {
+    background: #111827;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.apiplatform-org-table td {
+    color: #e5e7eb;
+}
+
+.apiplatform-org-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.apiplatform-org-member .apiplatform-publisher-avatar {
+    flex-basis: 34px;
+    height: 34px;
+    width: 34px;
+}
+
+.apiplatform-org-member strong {
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.apiplatform-org-member-actions {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.apiplatform-org-role-form {
+    align-items: center;
+    display: inline-flex;
+    gap: 8px;
+}
+
+.apiplatform-org-role-form select {
+    min-height: 36px;
+    min-width: 130px;
+}
+
+.apiplatform-org-badge {
+    border: 1px solid transparent;
+    letter-spacing: 0;
+}
+
+.apiplatform-org-badge-role,
+.apiplatform-org-badge-testing,
+.apiplatform-org-badge-ready,
+.apiplatform-org-badge-beta {
+    background: #dbeafe;
+    border-color: #93c5fd;
+    color: #1e40af;
+}
+
+.apiplatform-org-badge-active,
+.apiplatform-org-badge-public {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.apiplatform-org-badge-suspended,
+.apiplatform-org-badge-unlisted {
+    background: #fef3c7;
+    border-color: #fcd34d;
+    color: #92400e;
+}
+
+.apiplatform-org-badge-archived,
+.apiplatform-org-badge-removed,
+.apiplatform-org-badge-deprecated,
+.apiplatform-org-badge-private {
+    background: #fee2e2;
+    border-color: #fca5a5;
+    color: #991b1b;
+}
+
+.apiplatform-org-note {
+    background: rgba(59, 130, 246, .12);
+    border: 1px solid rgba(147, 197, 253, .35);
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 10px 12px;
+}
+
+.apiplatform-org-form {
+    display: grid;
+    gap: 14px;
+}
+
+.apiplatform-org-context-switcher {
+    align-items: end;
+    grid-template-columns: minmax(220px, 1fr) auto;
+    margin-bottom: 0;
+}
+
+.apiplatform-org-context-switcher label {
+    display: grid;
+    gap: 7px;
+}
+
+.apiplatform-org-form .apiplatform-form-row {
+    display: grid;
+    gap: 7px;
+}
+
+.apiplatform-org-form .apiplatform-input,
+.apiplatform-org-form textarea,
+.apiplatform-org-form select,
+.apiplatform-org-role-form select {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.apiplatform-org-form .apiplatform-input::placeholder,
+.apiplatform-org-form textarea::placeholder {
+    color: #94a3b8;
+}
+
+.apiplatform-org-form .apiplatform-input:focus,
+.apiplatform-org-form textarea:focus,
+.apiplatform-org-form select:focus,
+.apiplatform-org-role-form select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 1px #60a5fa;
+    outline: none;
+}
+
+.apiplatform-org-activity-list {
+    display: grid;
+    gap: 10px;
+}
+
+.apiplatform-org-activity-item {
+    align-items: flex-start;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+}
+
+.apiplatform-org-activity-item strong,
+.apiplatform-org-activity-item span {
+    display: block;
+}
+
+.apiplatform-org-activity-item strong {
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.apiplatform-org-activity-item span {
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.apiplatform-org-activity-marker {
+    background: #60a5fa;
+    border-radius: 999px;
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, .14);
+    flex: 0 0 10px;
+    height: 10px;
+    margin-top: 5px;
+    width: 10px;
+}
+
+.apiplatform-org-card-danger {
+    border-color: rgba(248, 113, 113, .55);
+}
+
+.apiplatform-org-danger-zone {
+    background: rgba(127, 29, 29, .22);
+    border: 1px solid rgba(248, 113, 113, .45);
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+    padding: 14px;
+}
+
+.apiplatform-org-danger-zone p {
+    color: #fecaca;
+    margin: 0;
+}
+
+.apiplatform-org-actions .apiplatform-button-danger,
+.apiplatform-org-danger-zone .apiplatform-button-danger {
+    background: #dc2626;
+    border-color: #ef4444;
+    color: #ffffff;
+}
+
+.apiplatform-org-actions .apiplatform-button-danger:hover,
+.apiplatform-org-actions .apiplatform-button-danger:focus,
+.apiplatform-org-danger-zone .apiplatform-button-danger:hover,
+.apiplatform-org-danger-zone .apiplatform-button-danger:focus {
+    background: #b91c1c;
+    color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+    .apiplatform-publisher-metrics,
+    .apiplatform-publisher-dashboard-grid,
+    .apiplatform-publisher-workspace-grid,
+    .apiplatform-publisher-api-grid,
+    .apiplatform-publisher-filters,
+    .apiplatform-create-wizard-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .apiplatform-org-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 720px) {
+    .apiplatform-organizations-page .apiplatform-publisher-api-grid.apiplatform-org-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-publisher-hero,
+    .apiplatform-publisher-page-head {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .apiplatform-publisher-metrics,
+    .apiplatform-publisher-dashboard-grid,
+    .apiplatform-publisher-workspace-grid,
+    .apiplatform-publisher-api-grid,
+    .apiplatform-publisher-filters,
+    .apiplatform-publisher-meta,
+    .apiplatform-create-wizard-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-publisher-actions .apiplatform-button,
+    .apiplatform-publisher-hero-actions .apiplatform-button,
+    .apiplatform-publisher-action-list .apiplatform-button,
+    .apiplatform-publisher-quick-actions .apiplatform-button {
+        width: 100%;
+    }
+
+    .apiplatform-publisher-request-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .apiplatform-doc-workspace-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-publisher-page.apiplatform-org-workspace {
+        padding: 14px;
+    }
+
+    .apiplatform-org-title-row,
+    .apiplatform-org-member-actions,
+    .apiplatform-org-role-form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .apiplatform-org-header-badges,
+    .apiplatform-org-actions {
+        align-items: stretch;
+    }
+
+    .apiplatform-org-actions .apiplatform-button,
+    .apiplatform-org-actions form,
+    .apiplatform-org-role-form select {
+        width: 100%;
+    }
+
+    .apiplatform-org-tabs {
+        flex-wrap: nowrap;
+        margin-left: -2px;
+        padding-bottom: 10px;
+    }
+
+    .apiplatform-org-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-org-table {
+        min-width: 700px;
+    }
+
+    .apiplatform-org-context-switcher {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "data",
+  "label": "Data Layer",
+  "version": "1.0.0",
+  "description": "Centralized API gateway and service layer.",
+  "author": "APIPlatform",
+  "bootstrap": "data.php",
+  "enabled": true
+}

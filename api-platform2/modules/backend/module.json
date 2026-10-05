@@ -1,0 +1,6 @@
+{
+  "name": "backend",
+  "label": "Admin Backend",
+  "enabled": true,
+  "autoload": true
+}

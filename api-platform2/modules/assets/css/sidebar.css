@@ -1,0 +1,162 @@
+/* =========================
+   API Platform sidebar controls
+========================= */
+.apiplatform-mobile-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 10001;
+    width: 42px;
+    height: 42px;
+    background: #111;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.apiplatform-mobile-toggle .bar {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.apiplatform-mobile-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.apiplatform-mobile-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.apiplatform-mobile-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.apiplatform-sidebar {
+    position: fixed;
+    top: 0;
+    left: -240px;
+    width: 220px;
+    height: 100%;
+    background: #2563eb;
+    color: #fff;
+    padding: 20px;
+    z-index: 10000;
+    transition: left 0.3s ease;
+}
+
+.apiplatform-sidebar.open {
+    left: 0;
+}
+
+.apiplatform-sidebar .sidebar-header {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.apiplatform-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.apiplatform-sidebar nav a {
+    align-items: center;
+    border-radius: 8px;
+    color: #d1d5db;
+    display: flex;
+    gap: 10px;
+    min-height: 40px;
+    padding: 9px 10px;
+    text-decoration: none;
+    transition: background-color .16s ease, color .16s ease;
+}
+
+.apiplatform-sidebar nav a:hover,
+.apiplatform-sidebar nav a:focus {
+    background: #1f2937;
+    color: #ffffff;
+    outline: none;
+}
+
+.apiplatform-sidebar nav a.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.apiplatform-sidebar .icon.dashicons {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 20px;
+    font-size: 20px;
+    height: 20px;
+    justify-content: center;
+    line-height: 1;
+    overflow: hidden;
+    width: 20px;
+}
+
+.apiplatform-sidebar .label {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    min-width: 0;
+}
+
+.apiplatform-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.apiplatform-overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (min-width: 769px){
+    .apiplatform {
+        align-items: stretch;
+        display: flex;
+    }
+
+    .apiplatform > .apiplatform-sidebar {
+        align-self: stretch;
+        background: #0f1117;
+        flex: 0 0 auto;
+        height: auto;
+        left: 0;
+        position: relative;
+        top: auto;
+    }
+
+    .apiplatform > .apiplatform-main {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .apiplatform-sidebar {
+        background: #111;
+    }
+
+    .apiplatform-mobile-toggle {
+        display: flex;
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "core",
+  "label": "Core System",
+  "enabled": true,
+  "autoload": true
+}

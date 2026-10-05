@@ -1,0 +1,117 @@
+.apiplatform-builder-wrap {
+    max-width: 1280px;
+}
+
+.apiplatform-builder-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.apiplatform-builder-card,
+.apiplatform-component-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+.apiplatform-builder-toolbar,
+.apiplatform-component-header {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.apiplatform-builder-toolbar h2,
+.apiplatform-component-header h3 {
+    margin: 0;
+}
+
+.apiplatform-toolbar-actions,
+.apiplatform-component-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.apiplatform-component-canvas {
+    margin-top: 16px;
+    min-height: 120px;
+}
+
+.apiplatform-component-card {
+    border-left: 4px solid #2271b1;
+}
+
+.apiplatform-empty-state {
+    border: 1px dashed #c3c4c7;
+    border-radius: 8px;
+    color: #646970;
+    padding: 28px;
+    text-align: center;
+}
+
+.apiplatform-field {
+    display: block;
+    margin: 14px 0;
+}
+
+.apiplatform-field span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.apiplatform-field input,
+.apiplatform-field textarea {
+    width: 100%;
+    max-width: 680px;
+}
+
+.apiplatform-field textarea {
+    min-height: 90px;
+}
+
+.apiplatform-response-preview {
+    background: #0f172a;
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    max-height: 420px;
+    overflow: auto;
+    padding: 14px;
+    white-space: pre-wrap;
+}
+
+.apiplatform-builder-sidebar code {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+@media (max-width: 960px) {
+    .apiplatform-builder-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-builder-toolbar,
+    .apiplatform-component-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .apiplatform-toolbar-actions,
+    .apiplatform-component-actions {
+        justify-content: flex-start;
+    }
+}

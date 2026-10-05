@@ -1,0 +1,466 @@
+.apiplatform-portal-docs-layout {
+    align-items: start;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+}
+
+.apiplatform-portal-doc-sidebar {
+    display: grid;
+    gap: 12px;
+    position: sticky;
+    top: 86px;
+}
+
+.apiplatform-portal-docs-content {
+    min-width: 0;
+}
+
+.apiplatform-portal-doc-version-bar {
+    align-items: center;
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+    margin: 14px 0 22px;
+    padding: 12px;
+}
+
+.apiplatform-portal-doc-version-bar span,
+.apiplatform-portal-doc-version-bar label {
+    color: #cbd5e1;
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.apiplatform-portal-doc-version-bar strong {
+    color: #ffffff;
+    display: block;
+    margin-top: 3px;
+}
+
+.apiplatform-portal-doc-version-bar form {
+    align-items: end;
+    display: flex;
+    gap: 8px;
+}
+
+.apiplatform-portal-doc-version-bar select {
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 7px;
+    color: #ffffff;
+    min-height: 38px;
+    padding: 8px 10px;
+}
+
+.apiplatform-portal-doc-version-bar button {
+    background: #2563eb;
+    border: 1px solid #60a5fa;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 800;
+    min-height: 38px;
+    padding: 8px 12px;
+}
+
+.apiplatform-portal-doc-search {
+    display: grid;
+    gap: 6px;
+    margin: 0 0 18px;
+}
+
+.apiplatform-portal-doc-search span {
+    color: #cbd5e1;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.apiplatform-portal-doc-search input {
+    background: #020617;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    color: #ffffff;
+    min-height: 42px;
+    padding: 10px 12px;
+}
+
+.apiplatform-portal-doc-search input::placeholder {
+    color: #94a3b8;
+}
+
+.apiplatform-portal-doc-search-meta {
+    color: #cbd5e1;
+    font-size: 12px;
+    min-height: 18px;
+}
+
+.apiplatform-portal-docs mark[data-portal-search-mark] {
+    background: #facc15;
+    border-radius: 3px;
+    color: #111827;
+    padding: 0 2px;
+}
+
+.apiplatform-portal-docs [data-doc-section][hidden] {
+    display: none;
+}
+
+.apiplatform-portal-docs-content .apiplatform-portal-panel {
+    line-height: 1.75;
+}
+
+.apiplatform-portal-docs-content h2 {
+    margin-bottom: 12px;
+}
+
+.apiplatform-portal-docs-content h3 {
+    color: #ffffff;
+    margin: 18px 0 10px;
+}
+
+.apiplatform-portal-toc {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    display: grid;
+    gap: 4px;
+    max-height: calc(100vh - 120px);
+    overflow: auto;
+    padding: 10px;
+}
+
+.apiplatform-portal-toc details {
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 6px;
+}
+
+.apiplatform-portal-toc summary {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 8px 9px;
+    text-transform: uppercase;
+}
+
+.apiplatform-portal-toc a {
+    align-items: center;
+    border-radius: 6px;
+    color: #cbd5e1;
+    display: flex;
+    font-size: 13px;
+    font-weight: 800;
+    gap: 8px;
+    padding: 8px 9px;
+    text-decoration: none;
+    transition: background .16s ease, color .16s ease;
+}
+
+.apiplatform-portal-toc a span {
+    background: #14532d;
+    border: 1px solid #22c55e;
+    border-radius: 999px;
+    color: #dcfce7;
+    flex: 0 0 auto;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+
+.apiplatform-portal-toc a:hover,
+.apiplatform-portal-toc a:focus,
+.apiplatform-portal-toc a.is-active {
+    background: #172554;
+    color: #ffffff;
+}
+
+.apiplatform-portal-doc-endpoint-head {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.apiplatform-portal-doc-endpoint-head p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.apiplatform-portal-doc-endpoint-head a {
+    color: #93c5fd;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.apiplatform-portal-doc-endpoint-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.apiplatform-portal-endpoint-meta {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 14px 0;
+}
+
+.apiplatform-portal-endpoint-meta div,
+.apiplatform-portal-doc-quickstart li,
+.apiplatform-portal-model {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.apiplatform-portal-endpoint-meta dt {
+    color: #cbd5e1;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.apiplatform-portal-endpoint-meta dd {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 4px 0 0;
+}
+
+.apiplatform-portal-endpoint-method-line {
+    align-items: center;
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0;
+    padding: 10px;
+}
+
+.apiplatform-portal-endpoint-method-line span {
+    background: #14532d;
+    border: 1px solid #22c55e;
+    border-radius: 999px;
+    color: #dcfce7;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 4px 8px;
+}
+
+.apiplatform-portal-doc-table-wrap {
+    border: 1px solid #334155;
+    border-radius: 10px;
+    margin: 14px 0;
+    overflow-x: auto;
+}
+
+.apiplatform-portal-doc-table {
+    border-collapse: collapse;
+    color: #e2e8f0;
+    min-width: 920px;
+    width: 100%;
+}
+
+.apiplatform-portal-doc-table th,
+.apiplatform-portal-doc-table td {
+    border-bottom: 1px solid #334155;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.apiplatform-portal-doc-table td {
+    color: #e2e8f0;
+    line-height: 1.55;
+}
+
+.apiplatform-portal-doc-table th {
+    background: #020617;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.apiplatform-portal-doc-empty {
+    background: #020617;
+    border: 1px dashed #475569;
+    border-radius: 10px;
+    margin: 14px 0;
+    padding: 12px;
+}
+
+.apiplatform-portal-doc-quickstart ol {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.apiplatform-portal-doc-quickstart strong,
+.apiplatform-portal-doc-quickstart span {
+    display: block;
+}
+
+.apiplatform-portal-doc-quickstart strong {
+    color: #ffffff;
+}
+
+.apiplatform-portal-doc-quickstart span {
+    color: #cbd5e1;
+    margin-top: 5px;
+}
+
+.apiplatform-portal-doc-tabs {
+    min-width: 0;
+}
+
+.apiplatform-portal-doc-tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.apiplatform-portal-doc-tab-list button {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 7px;
+    color: #cbd5e1;
+    cursor: pointer;
+    font-weight: 800;
+    min-height: 38px;
+    padding: 8px 10px;
+    transition: background .16s ease, border-color .16s ease, color .16s ease;
+}
+
+.apiplatform-portal-doc-tab-list button:hover,
+.apiplatform-portal-doc-tab-list button:focus,
+.apiplatform-portal-doc-tab-list button.is-active {
+    background: #1d4ed8;
+    border-color: #60a5fa;
+    color: #ffffff;
+}
+
+.apiplatform-portal-doc-tab-panel[hidden] {
+    display: none;
+}
+
+.apiplatform-portal-models {
+    display: grid;
+    gap: 12px;
+}
+
+.apiplatform-portal-model summary {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.apiplatform-portal-model summary strong {
+    color: #ffffff;
+}
+
+.apiplatform-portal-model summary span {
+    color: #cbd5e1;
+}
+
+.apiplatform-portal-sdk-center > p {
+    color: #cbd5e1;
+}
+
+.apiplatform-portal-changelog {
+    display: grid;
+    gap: 12px;
+}
+
+.apiplatform-portal-changelog article {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.apiplatform-portal-changelog article div {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.apiplatform-portal-changelog article span {
+    background: #172554;
+    border: 1px solid #60a5fa;
+    border-radius: 999px;
+    color: #bfdbfe;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 4px 8px;
+}
+
+.apiplatform-portal-changelog article strong {
+    color: #ffffff;
+}
+
+.apiplatform-portal-changelog article p,
+.apiplatform-portal-changelog article time {
+    color: #cbd5e1;
+}
+
+.apiplatform-portal-warning-inline {
+    color: #fde68a !important;
+    font-weight: 900;
+}
+
+.apiplatform-portal-docs pre,
+.apiplatform-portal-docs code {
+    max-width: 100%;
+}
+
+.apiplatform-portal-docs pre {
+    overflow-x: auto;
+    line-height: 1.65;
+    padding: 14px;
+}
+
+.apiplatform-portal-code-block[data-json-viewer] button + button {
+    margin-left: 8px;
+}
+
+@media (max-width: 860px) {
+    .apiplatform-portal-docs-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-portal-doc-sidebar {
+        position: static;
+    }
+
+    .apiplatform-portal-toc {
+        max-height: none;
+        position: static;
+    }
+
+    .apiplatform-portal-endpoint-meta,
+    .apiplatform-portal-doc-quickstart ol {
+        grid-template-columns: 1fr;
+    }
+
+    .apiplatform-portal-doc-version-bar,
+    .apiplatform-portal-doc-version-bar form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}

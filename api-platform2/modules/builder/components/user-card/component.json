@@ -1,0 +1,31 @@
+{
+  "name": "user-card",
+  "class": "APIPlatform_Builder_Component_User_Card",
+  "label": "User Card",
+  "description": "A reusable response block for user profile data.",
+  "fields": [
+    {
+      "name": "username",
+      "label": "Username",
+      "type": "text",
+      "placeholder": "John"
+    },
+    {
+      "name": "followers",
+      "label": "Followers",
+      "type": "number",
+      "placeholder": "1000"
+    },
+    {
+      "name": "bio",
+      "label": "Bio",
+      "type": "textarea",
+      "placeholder": "Demo user"
+    }
+  ],
+  "output": {
+    "username": "{{username}}",
+    "followers": "{{followers}}",
+    "bio": "{{bio}}"
+  }
+}

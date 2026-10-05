@@ -1,0 +1,126 @@
+.apiplatform-api-documentation {
+    display: grid;
+    gap: 24px;
+}
+
+.apiplatform-api-doc-header {
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.apiplatform-api-doc-header h2 {
+    margin-bottom: 8px;
+}
+
+.apiplatform-api-doc-badges,
+.apiplatform-api-doc-actions,
+.apiplatform-api-tester-footer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-api-doc-badges span {
+    background: #f5f7fb;
+    border: 1px solid #dce4ef;
+    border-radius: 6px;
+    color: #233044;
+    padding: 6px 10px;
+}
+
+.apiplatform-api-doc-section {
+    border-top: 1px solid #e1e7ef;
+    display: grid;
+    gap: 12px;
+    padding-top: 20px;
+}
+
+.apiplatform-doc-endpoint,
+.apiplatform-api-doc-code-line {
+    overflow-wrap: anywhere;
+}
+
+.apiplatform-api-doc-code-line {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apiplatform-api-doc-table-wrap {
+    overflow-x: auto;
+}
+
+.apiplatform-api-doc-table {
+    border-collapse: collapse;
+    min-width: 720px;
+    width: 100%;
+}
+
+.apiplatform-api-doc-table th,
+.apiplatform-api-doc-table td {
+    border-bottom: 1px solid #e1e7ef;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.apiplatform-doc-tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.apiplatform-doc-tab {
+    background: #f7f8fb;
+    border: 1px solid #d6dee9;
+    border-radius: 6px;
+    color: #1f2937;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.apiplatform-doc-tab.is-active {
+    background: #153e75;
+    border-color: #153e75;
+    color: #fff;
+}
+
+.apiplatform-doc-tab-panel {
+    display: none;
+    margin-top: 14px;
+}
+
+.apiplatform-doc-tab-panel.is-active {
+    display: block;
+}
+
+.apiplatform-docs-example {
+    border: 1px solid #dce4ef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.apiplatform-docs-example-header {
+    align-items: center;
+    background: #f7f9fc;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 12px;
+}
+
+.apiplatform-docs-code {
+    margin: 0;
+    overflow-x: auto;
+    padding: 14px;
+}
+
+@media (max-width: 720px) {
+    .apiplatform-api-doc-header {
+        display: grid;
+    }
+}

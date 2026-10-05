@@ -1,0 +1,9 @@
+{
+  "name": "logs",
+  "label": "Advanced Logging",
+  "enabled": true,
+  "autoload": true,
+  "plan_required": ["pro", "premium"],
+  "addon": true,
+  "price": 5
+}
