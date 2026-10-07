@@ -1,0 +1,42 @@
+PHP 8.1 syntax + runtime contract checks. Real Core gateway/cache/logger source executed with WordPress doubles and SQLite. Not a live WordPress integration test.
+PASS: Wrong secret denied
+PASS: Exact redirect required
+PASS: Wrong PKCE denied
+PASS: Valid PKCE token exchange
+PASS: Code replay denied
+PASS: Only token hash stored
+PASS: Vault saved
+PASS: Stale write denied
+PASS: Bearer accepted
+PASS: Stable private subject
+PASS: Approved fields only
+PASS: Unapproved read denied
+PASS: Unapproved collection denied
+PASS: Approved collection sanitized and saved
+PASS: User isolation
+PASS: Collection conflict denied
+PASS: Missing bearer denied
+PASS: HTTP denied
+PASS: Expired consent denied
+PASS: Expired token denied
+PASS: Disabled app denied
+PASS: Revocation enforced
+PASS: Access and consent audited
+PASS: Encryption round trip
+PASS: Ciphertext tampering rejected
+PASS: URL validation
+PASS: Actual Core runtime invokes native bridge
+PASS: Host receives user token; platform key stays at Core
+PASS: Native data response is no-store
+PASS: Sensitive API bypasses existing shared cache even if cache setting enabled
+PASS: Sensitive data is never stored in Core transient cache
+PASS: Native runtime rejects resolver fallback on unknown path
+PASS: Native runtime rejects invalid method
+PASS: Native runtime requires central token
+PASS: Native runtime preserves central revocation denial
+PASS: Token exchange forwards only allowed body fields
+PASS: Actual Core logger omits all personal data and auth material
+PASS: Failed route token exchanges also suppress secrets
+PASS: Ordinary API history behavior remains intact
+PASS: Connector separates platform credential from user token
+TOTAL: 40 checks passed

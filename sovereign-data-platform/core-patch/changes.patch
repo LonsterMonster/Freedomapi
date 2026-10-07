@@ -1,0 +1,42 @@
+--- a/api-platform2/modules/helpers/gateway.php
++++ b/api-platform2/modules/helpers/gateway.php
+@@ -59,6 +59,7 @@
+ class APIPlatform_Gateway {
+ 
+     const ROUTES_VERSION = '9-0';
++    const SENSITIVE_DATA_INTERFACE = '1.0.0';
+     const MAX_PROXY_BYTES = 1048576;
+ 
+     private static $instance = null;
+@@ -1034,6 +1035,8 @@
+     }
+ 
+     private static function cache_allowed(APIPlatform_Gateway_Request $request){
++        // A personal data API must never reuse an application-wide cache.
++        if (get_post_meta($request->api_id, '_freedomapi_sensitive_data_api', true)) return false;
+         // Never share authenticated legacy/published-key responses across identities.
+         // Application keys have a stable, non-secret key id for cache partitioning.
+         return ($request->auth_context['auth_type'] ?? '') === 'application'
+--- a/api-platform2/modules/helpers/storage.php
++++ b/api-platform2/modules/helpers/storage.php
+@@ -9,6 +9,20 @@
+ function apiplatform_log_api_request($user_id, $api_id, $endpoint, $status, $start, array $auth_context = []){
+     global $wpdb;
+     $table = $wpdb->prefix . 'apiplatform_logs';
++
++    // Keep operational metadata, but omit personal data and sign-in material.
++    $sensitive = (bool) get_post_meta($api_id, '_freedomapi_sensitive_data_api', true);
++    foreach (($auth_context['request_headers'] ?? []) as $name => $value) {
++        if (strtolower((string) $name) === 'x-access-token') $sensitive = true;
++    }
++    $submitted = $auth_context['request_body'] ?? '';
++    $submitted = is_array($submitted) ? $submitted : json_decode((string) $submitted, true);
++    if (is_array($submitted) && ($submitted['grant_type'] ?? '') === 'authorization_code') $sensitive = true;
++    if ($sensitive) {
++        foreach (['request_headers', 'query_params', 'request_body', 'response_headers', 'response_body'] as $capture) {
++            $auth_context[$capture] = [];
++        }
++    }
+ 
+     $data = [
+         'user_id'=>absint($user_id),

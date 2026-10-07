@@ -1,0 +1,14 @@
+{
+  "repository": "LonsterMonster/Freedomapi",
+  "commit": "e8067ed44a38914621c1be0d6db32004c87d310f",
+  "files": {
+    "gateway.php": {
+      "original_sha256": "c5e8410c42738271eface25ba926a2e492d6dbbe535484efba7603960bb64c6c",
+      "patched_sha256": "f5f37a52a74ada77efa017bfd8a5e60ca934a6be7ebabe3683c458e5ed6fd48e"
+    },
+    "storage.php": {
+      "original_sha256": "7804981ae7744fcbc11626fa646f5bb2b5444777b34640b47359c9f92f733957",
+      "patched_sha256": "a4fc5a9e33e5cabce5f48ef7eb1f59344278b100650746b7532665804836e9e6"
+    }
+  }
+}
